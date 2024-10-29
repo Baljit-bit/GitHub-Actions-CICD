@@ -26,3 +26,8 @@ jobs:
       run: |
         cd src
         python -m pytest addition.py
+    
+    runs-on: self-hosted  # Use your self-hosted runner
+    steps:  
+       - name: Run a Self-hosted Runner
+         run: echo "Hello from self-hosted runner!"
