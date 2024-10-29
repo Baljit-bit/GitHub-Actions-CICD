@@ -26,7 +26,7 @@ jobs:
       run: |
         cd src
         python -m pytest addition.py
-    
+  deploy:
     runs-on: self-hosted  # Use your self-hosted runner
     steps:  
        - name: Run a Self-hosted Runner
